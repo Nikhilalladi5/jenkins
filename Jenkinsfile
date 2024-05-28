@@ -8,6 +8,7 @@ pipeline{
     }
     stage('shell') {
       steps{
+        sh 'chmod +x aws.sh'
         sh './aws.sh'
       }
     }
